@@ -1,4 +1,4 @@
-.itemList{
+.detail{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -6,14 +6,4 @@
     align-items: center;
     margin-top: 5px;
     
-}
-
-.itemList a{
-    text-decoration: none;
-    color: black;
-}
-
-.item{
-    border: 1px solid;
-    margin-top: 15px;
 }

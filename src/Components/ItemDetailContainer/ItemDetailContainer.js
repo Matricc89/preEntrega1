@@ -2,6 +2,7 @@ import { useEffect,useState } from "react";
 import {useParams} from "react-router-dom";
 import { products } from "../data/products"
 import ItemDetail from "../ItemDetail/ItemDetail";
+import './detail.css';
 
 const ItemDetailContainer = () => {
   const {id} = useParams();
@@ -22,7 +23,7 @@ const ItemDetailContainer = () => {
   }, [])
 
   return (
-    <div> 
+    <div className="detalle"> 
       <ItemDetail detail={detailObjet}/>
 
     </div>

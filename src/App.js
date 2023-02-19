@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import logo from './Components/Assets/logo.png';
+import logo from './Components/img/logo.png';
 import './App.css';
 import NavBar from './Components/NavBar/NavBar';
-import ItemListContainer from './Components/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailContainer';
+import ItemListContainer from './Components/ItemListContainer/ItemListContainer';
 
 function App() {
   return (
