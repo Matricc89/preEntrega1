@@ -4,14 +4,16 @@ import './App.css';
 import NavBar from './Components/NavBar/NavBar';
 import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailContainer';
 import ItemListContainer from './Components/ItemListContainer/ItemListContainer';
+import Cart from './Components/Cart/Cart';
+import {  NavLink } from "react-router-dom";
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <NavBar />
+           <NavLink to="/"><img src={logo} className="App-logo" alt="logo" /></NavLink>
+           <NavBar />
         </header>
       </div>
       <Routes>
@@ -19,6 +21,7 @@ function App() {
         <Route path="*" element={<div><h1>Esta Pagina No exite</h1></div>}/>
         <Route path="/item/:id" element={<ItemDetailContainer/>}/>
         <Route path="/category/:categoryId" element={<ItemListContainer/>}/>
+        <Route path='/cart' element={<Cart/>}/>
       </Routes>
     </BrowserRouter>
   );
